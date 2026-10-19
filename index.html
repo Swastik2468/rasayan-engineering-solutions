@@ -285,25 +285,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media (max-width:920px){.services-grid{grid-template-columns:repeat(2,1fr);}}
 @media (max-width:620px){.services-grid{grid-template-columns:1fr;}}
 
-/* ============================= EXPERTISE ============================= */
-.expertise{padding:110px 0;background:#fff;}
-.expertise-list{border-top:1px solid var(--line);}
-.expertise-row{
-  display:grid;grid-template-columns:80px 1fr 1.4fr;gap:28px;align-items:center;
-  padding:26px 0;border-bottom:1px solid var(--line);
-  transition:background .2s var(--ease);
-}
-.expertise-row:hover{background:var(--blue-light);}
-.expertise-num{font-family:var(--font-mono);font-size:13px;color:var(--blue-eng);letter-spacing:.05em;}
-.expertise-row h4{font-family:var(--font-display);font-size:16.5px;font-weight:700;color:var(--navy-deep);}
-.expertise-row p{font-size:14px;margin:0;}
-@media (max-width:760px){
-  .expertise-row{grid-template-columns:1fr;gap:6px;padding:22px 0;}
-  .expertise-num{order:1;}
-}
-
 /* ============================= INDUSTRIES ============================= */
 .industries{padding:110px 0;background:var(--navy-deep);color:#fff;position:relative;overflow:hidden;}
+.industries h2{color:#fff;}
 .industries .section-head p{color:#B9C6D6;}
 .industries .eyebrow{color:#7FB2E8;}
 .industries .eyebrow::before{background:#7FB2E8;}
@@ -432,7 +416,6 @@ footer{background:#081527;color:#fff;padding:70px 0 28px;}
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#expertise">Expertise</a>
       <a href="#industries">Industries</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -451,7 +434,6 @@ footer{background:#081527;color:#fff;padding:70px 0 28px;}
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#projects">Projects</a>
-  <a href="#expertise">Expertise</a>
   <a href="#industries">Industries</a>
   <a href="#contact">Contact</a>
   <a href="#contact" class="btn btn-primary">Contact Us</a>
@@ -692,60 +674,6 @@ footer{background:#081527;color:#fff;padding:70px 0 28px;}
     </div>
   </section>
 
-  <!-- ============================= EXPERTISE ============================= -->
-  <section class="expertise" id="expertise">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="eyebrow">Technical Capability</div>
-        <h2>Engineering Expertise</h2>
-        <p style="margin-top:14px;">The technical disciplines and calculations that underpin every engagement.</p>
-      </div>
-
-      <dl class="expertise-list reveal-stagger">
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;01</span>
-          <h4>Process Design</h4>
-          <p>Developing process configurations aligned to product, capacity, and operating requirements.</p>
-        </div>
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;02</span>
-          <h4>Mass &amp; Energy Balances</h4>
-          <p>Quantifying material and energy flows across a process to establish design and operating baselines.</p>
-        </div>
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;03</span>
-          <h4>Process Calculations</h4>
-          <p>Engineering calculations supporting equipment selection, sizing, and process verification.</p>
-        </div>
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;04</span>
-          <h4>Process Simulation</h4>
-          <p>Modeling process behavior to evaluate performance under varying operating conditions.</p>
-        </div>
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;05</span>
-          <h4>Equipment Sizing</h4>
-          <p>Determining appropriate equipment dimensions and specifications from process requirements.</p>
-        </div>
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;06</span>
-          <h4>Process Flow Diagrams</h4>
-          <p>Documenting process configuration, equipment, and flow relationships in clear technical form.</p>
-        </div>
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;07</span>
-          <h4>Process Analysis</h4>
-          <p>Reviewing process data and operating behavior to identify constraints and improvement areas.</p>
-        </div>
-        <div class="expertise-row">
-          <span class="expertise-num">EXP&nbsp;08</span>
-          <h4>Engineering Documentation</h4>
-          <p>Preparing clear technical studies, calculations, and deliverables for engineering decisions.</p>
-        </div>
-      </dl>
-    </div>
-  </section>
-
   <!-- ============================= INDUSTRIES ============================= -->
   <section class="industries" id="industries">
     <div class="container">
@@ -956,7 +884,6 @@ footer{background:#081527;color:#fff;padding:70px 0 28px;}
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
-        <a href="#expertise">Expertise</a>
         <a href="#industries">Industries</a>
         <a href="#contact">Contact</a>
       </nav>
