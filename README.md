@@ -24,7 +24,7 @@ assets/
 .gitattributes
 ```
 
-Sections in `index.html`: hero, about, services, projects, expertise, industries,
+Sections in `index.html`: hero, about, services, projects, industries,
 why-us, how-we-work, CTA, contact, footer. Navigation is in-page anchor
 links.
 
