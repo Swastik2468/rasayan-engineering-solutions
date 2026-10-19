@@ -19,8 +19,8 @@ founder, headcount) that `index.html`'s placeholder fields
 
 ```
 index.html        Entire site — markup, inline <style>, inline <script>
-logo.png          Full company logo (emblem + wordmark)      [feature/company-logo]
-logo-mark.png     Circular emblem, used in navbar + footer    [feature/company-logo]
+assets/
+  logo_rasayan_engg.png   Company logo (emblem + wordmark); navbar, footer, favicon
 .gitattributes
 ```
 
@@ -64,7 +64,7 @@ is not yet wired to the DOM.
 
 Tracked in [GitHub issues](https://github.com/Swastik2468/rasayan-engineering-solutions/issues):
 
-- **#1** Company logo — added to navbar + footer on `feature/company-logo`.
+- **#3** Logo — added to navbar, footer, favicon (`assets/logo_rasayan_engg.png`). #1 is a duplicate.
 - **#2** Contact form has no backend. It validates and clears on submit
   but does not send anything. Needs a mail service (Formspree / Web3Forms)
   or a `mailto:` fallback.
