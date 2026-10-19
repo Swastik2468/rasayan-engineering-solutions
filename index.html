@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rasayan Engineering Solutions | Chemical &amp; Process Engineering Consultancy</title>
 <meta name="description" content="Rasayan Engineering Solutions provides specialized chemical and process engineering consultancy focused on practical, technically sound solutions for industrial processes.">
+<link rel="icon" type="image/png" href="assets/logo_rasayan_engg.png">
+<meta property="og:image" content="assets/logo_rasayan_engg.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -117,21 +119,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   display:flex;align-items:center;justify-content:space-between;
   height:76px;
 }
-/* ---- LOGO PLACEHOLDER: replace the SVG mark + text below with your real logo ---- */
-.logo-placeholder{
-  display:flex;align-items:center;gap:10px;
-  height:40px;
-}
-.logo-placeholder img{display:none;height:40px;width:auto;} /* enable this when you add /logo.png */
-.logo-mark{
-  width:38px;height:38px;flex-shrink:0;
-}
+.logo{display:flex;align-items:center;gap:10px;}
+/* logo PNG has a tiny baked-in wordmark; crop to the mark, name is live text */
+.logo-mark{--s:56px;width:var(--s);height:var(--s);overflow:hidden;flex-shrink:0;}
+.logo-mark img{display:block;height:calc(var(--s)*1.18);width:auto;margin-left:calc(var(--s)*-.11);}
 .logo-text{
   font-family:var(--font-display);font-weight:800;font-size:16.5px;color:var(--navy-deep);
   letter-spacing:-.01em;line-height:1.15;
 }
 .logo-text span{display:block;font-family:var(--font-mono);font-weight:400;font-size:10px;letter-spacing:.1em;color:var(--text-mute);text-transform:uppercase;margin-top:1px;}
-/* ---- END LOGO PLACEHOLDER ---- */
 
 .nav-links{display:flex;align-items:center;gap:38px;}
 .nav-links a{
@@ -382,6 +378,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 /* ============================= FOOTER ============================= */
 footer{background:#081527;color:#fff;padding:70px 0 28px;}
 .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--line-on-dark);}
+.footer-brand .logo-mark{--s:60px;background:#fff;border-radius:var(--radius-md);}
 .footer-brand .logo-text{color:#fff;}
 .footer-brand .logo-text span{color:#7B8CA3;}
 .footer-brand p{color:#7B8CA3;font-size:14px;margin-top:16px;max-width:280px;}
@@ -415,13 +412,8 @@ footer{background:#081527;color:#fff;padding:70px 0 28px;}
 <!-- ============================= NAVBAR ============================= -->
 <header class="navbar" id="navbar">
   <div class="container nav-inner">
-    <a href="#home" class="logo-placeholder" aria-label="Rasayan Engineering Services — Home">
-      <!-- Replace this <svg> with <img src="/logo.png" alt="Rasayan Engineering Services"> and delete the mark below -->
-      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="1" y="1" width="38" height="38" rx="4" stroke="#1565C0" stroke-width="1.4"/>
-        <path d="M10 27V13h6.5a4.5 4.5 0 0 1 0 9H10M16.5 22 22 27" stroke="#0B1F3A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="29" cy="12" r="1.6" fill="#1565C0"/>
-      </svg>
+    <a href="#home" class="logo" aria-label="Rasayan Engineering Solutions — Home">
+      <span class="logo-mark"><img src="assets/logo_rasayan_engg.png" alt=""></span>
       <span class="logo-text">Rasayan<span>Engineering Solutions</span></span>
     </a>
 
@@ -877,7 +869,10 @@ footer{background:#081527;color:#fff;padding:70px 0 28px;}
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo-text">Rasayan<span>Engineering Solutions</span></div>
+        <a href="#home" class="logo" aria-label="Rasayan Engineering Solutions — Home">
+          <span class="logo-mark"><img src="assets/logo_rasayan_engg.png" alt=""></span>
+          <span class="logo-text">Rasayan<span>Engineering Solutions</span></span>
+        </a>
         <p>Chemical &amp; Process Engineering Consultancy</p>
       </div>
       <nav class="footer-col" aria-label="Footer navigation">
