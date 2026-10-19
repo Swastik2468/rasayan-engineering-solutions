@@ -1,0 +1,14 @@
+.DS_Store
+*.log
+.gstack/
+
+TASKS.md
+RULES.md
+AGENTS.md
+ARCHITECTURE.md
+DECISION.md
+DESIGN.md
+PRD.md
+MEMORY.md
+SECURITY.md
+TEST_PLAN.md

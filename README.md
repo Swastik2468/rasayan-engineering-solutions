@@ -5,6 +5,16 @@ engineering consultancy based in Vadodara.
 
 Single-page, static, no build step. Everything lives in one file.
 
+**Live:** <https://swastik2468.github.io/rasayan-engineering-solutions/>
+(GitHub Pages, deployed from `main`).
+
+**Content/company reference:** [Rasayan Engineering Solutions – Company
+Brain](https://claude.ai/artifact/7djnjCMyJf196g8tYNFfGm#c7752bf0-3d55) —
+brand, services, positioning, and the real company details (background,
+founder, headcount) that `index.html`'s placeholder fields
+(`[Company Background]` etc.) still need to be filled in from. See
+`TASKS.md`.
+
 ## Structure
 
 ```
@@ -39,9 +49,10 @@ Then open <http://localhost:8000>. Or just open `index.html` in a browser
 
 ## Deploy
 
-Static — publish `index.html` (and the `logo*.png` files) to any static
-host: GitHub Pages, Netlify, Cloudflare Pages, S3, nginx. No server-side
-runtime.
+Live on **GitHub Pages**, served straight from `main` —
+<https://swastik2468.github.io/rasayan-engineering-solutions/>. No build
+step, no CI: whatever's on `main` is what's live. Static, so it'd also run
+unchanged on Netlify, Cloudflare Pages, S3, or nginx if that ever changes.
 
 ## Editing content
 
